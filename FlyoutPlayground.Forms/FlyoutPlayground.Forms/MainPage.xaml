@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<FlyoutPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="FlyoutPlayground.Forms.MainPage"
+    FlyoutLayoutBehavior="Split"
+    Title="Flyout">
+
+    <FlyoutPage.Flyout>
+        <ContentPage
+            Title="Flyout">
+            <StackLayout
+                Orientation="Vertical"
+                Padding="20,30">
+                <Button
+                    Text="Page1"
+                    Clicked="OnMenuItemClicked"
+                    AutomationId="Page1Button"
+                    HorizontalOptions="Fill" />
+                <Button
+                    Text="Page2"
+                    Clicked="OnMenuItemClicked"
+                    AutomationId="Page2Button"
+                    HorizontalOptions="Fill" />
+            </StackLayout>
+        </ContentPage>
+    </FlyoutPage.Flyout>
+
+</FlyoutPage>
